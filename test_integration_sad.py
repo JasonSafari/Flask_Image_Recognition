@@ -1,14 +1,5 @@
-# test_integration_sad.py
+"""Integration tests for error handling when no file is uploaded."""
 
-import pytest
-from app import app
-from io import BytesIO
-
-@pytest.fixture
-def client():
-    """Fixture for the Flask test client."""
-    with app.test_client() as client:
-        yield client
 
 def test_missing_file(client):
     """Test the prediction route with a missing file."""
