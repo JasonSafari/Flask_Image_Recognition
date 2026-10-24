@@ -9,3 +9,7 @@ disable = []
 
 [tool.pytest.ini_options]
 filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.pylint.similarities]
+min-similarity-lines=25
+ignore-imports=true
